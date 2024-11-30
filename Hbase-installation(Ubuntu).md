@@ -5,7 +5,6 @@ This guide provides step-by-step instructions for installing and configuring Apa
 ## Prerequisites
 
 - JDK 8 installation
-- Root or sudo access
 
 ## 1. Install JDK 8
 
