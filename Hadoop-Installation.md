@@ -42,7 +42,7 @@ Install the downloaded JDK 8 (jdk8.msi).
 ### Step 4: Configure Environment Variables
 
 1. Set JAVA_HOME:
-   - Variable name: ``JAVA_HOME``
+   - Variable name: `JAVA_HOME`
    - Variable value: C:\Program Files\Java\jdk1.8.0_202
 
 2. Set HADOOP_HOME:
