@@ -41,17 +41,17 @@ Install the downloaded JDK 8 (jdk8.msi).
 
 ### Step 4: Configure Environment Variables
 
-1. Set JAVA_HOME:
+#### 1. Set JAVA_HOME:
    - Variable name: `JAVA_HOME`
-   - Variable value: C:\Program Files\Java\jdk1.8.0_202
+   - Variable value: `C:\Program Files\Java\jdk1.8.0_202`
 
-2. Set HADOOP_HOME:
-   - Variable name: HADOOP_HOME
-   - Variable value: C:\Hadoop\hadoop-3.3.0
+#### 2. Set HADOOP_HOME:
+   - Variable name: `HADOOP_HOME`
+   - Variable value: `C:\Hadoop\hadoop-3.3.0`
 
-3. Add to PATH:
-   - C:\Program Files\Java\jdk1.8.0_202\bin
-   - C:\Hadoop\hadoop-3.3.0\bin
+#### 3. Add to PATH:
+   - `C:\Program Files\Java\jdk1.8.0_202\bin`
+   - `C:\Hadoop\hadoop-3.3.0\bin`
 
 ### Step 5: Configure Hadoop
 
