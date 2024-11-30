@@ -58,6 +58,9 @@ This guide provides step-by-step instructions for installing and configuring Apa
 
 2. Add the following lines:
    ```bash
+   export JAVA_HOME=/usr/lib/jvm/jdk1.8.0
+   export PATH=$JAVA_HOME/bin:$PATH
+
    export HBASE_HOME=/var/hbase/hbase-2.5.10
    export PATH=$PATH:$HBASE_HOME/bin
    ```
