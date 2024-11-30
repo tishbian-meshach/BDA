@@ -55,7 +55,7 @@ Install the downloaded JDK 8 (jdk8.msi).
 
 ### Step 5: Configure Hadoop
 
-1. Edit core-site.xml (C:\Hadoop\hadoop-3.3.0\etc\hadoop\core-site.xml):
+1. Edit `core-site.xml` (C:\Hadoop\hadoop-3.3.0\etc\hadoop\core-site.xml):
    ```xml
    <configuration>
       <property>
@@ -71,7 +71,7 @@ Install the downloaded JDK 8 (jdk8.msi).
    mkdir C:\hadoop\hadoop-3.3.0\data\namenode
    ```
 
-3. Edit hdfs-site.xml (C:\Hadoop\hadoop-3.3.0\etc\hadoop\hdfs-site.xml):
+3. Edit `hdfs-site.xml` (C:\Hadoop\hadoop-3.3.0\etc\hadoop\hdfs-site.xml):
    ```xml
    <configuration>
       <property>
@@ -89,7 +89,7 @@ Install the downloaded JDK 8 (jdk8.msi).
    </configuration>
    ```
 
-4. Edit mapred-site.xml (C:\Hadoop\hadoop-3.3.0\etc\hadoop\mapred-site.xml):
+4. Edit `mapred-site.xml` (C:\Hadoop\hadoop-3.3.0\etc\hadoop\mapred-site.xml):
    ```xml
    <configuration>
        <property>
@@ -103,7 +103,7 @@ Install the downloaded JDK 8 (jdk8.msi).
    </configuration>
    ```
 
-5. Edit yarn-site.xml (C:\Hadoop\hadoop-3.3.0\etc\hadoop\yarn-site.xml):
+5. Edit `yarn-site.xml` (C:\Hadoop\hadoop-3.3.0\etc\hadoop\yarn-site.xml):
    ```xml
    <configuration>
        <property>
@@ -117,7 +117,7 @@ Install the downloaded JDK 8 (jdk8.msi).
    </configuration>
    ```
 
-6. Edit hadoop-env.cmd (C:\Hadoop\hadoop-3.3.0\etc\hadoop\hadoop-env.cmd):
+6. Edit `hadoop-env.cmd` (C:\Hadoop\hadoop-3.3.0\etc\hadoop\hadoop-env.cmd):
    ```
    set JAVA_HOME=C:\Progra~1\Java\jdk1.8.0_202
    @rem set HADOOP_CONF_DIR=C:\Hadoop\hadoop-3.3.0\etc\hadoop
