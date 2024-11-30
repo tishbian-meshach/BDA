@@ -119,7 +119,7 @@ This project demonstrates a basic word counting application using Hadoop MapRedu
 5. Run the MapReduce job:
 
    ```
-   hadoop jar WordCount.jar WordCount /input/input.txt /output
+   hadoop jar C:\Downloads\word_count\WordCount.jar WordCount /input/input.txt /output
    ```
 
 6. View the results:
