@@ -40,7 +40,7 @@ This project demonstrates a simple calculator service using Apache Thrift with P
 
 - `calculator.thrift` Paste the following Code:
   
-   ```
+   ```Python
    namespace py calculator
    service Calculator {
     i32 add(1: i32 num1, 2: i32 num2),
@@ -50,7 +50,7 @@ This project demonstrates a simple calculator service using Apache Thrift with P
    
 - `server.py` Paste the following Code:
   
-  ```
+  ```Python
   from __future__ import print_function
 
    import sys
@@ -89,7 +89,7 @@ This project demonstrates a simple calculator service using Apache Thrift with P
   
 - `client.py` Paste the following Code:
   
-   ```
+   ```Python
    from __future__ import print_function
 
    import sys
