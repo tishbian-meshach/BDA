@@ -15,7 +15,6 @@ This project demonstrates a simple calculator service using Apache Thrift with P
    For Ubuntu/Debian:
    ```
    sudo apt-get update
-   sudo apt-get install thrift-compiler
    ```
 
 
@@ -39,10 +38,89 @@ This project demonstrates a simple calculator service using Apache Thrift with P
 
 ## Project Structure
 
-- `calculator.thrift`: Thrift definition file for the calculator service
-- `server.py`: Python script for the calculator server
-- `client.py`: Python script for the calculator client
-- `gen-py/`: Directory containing Thrift-generated code (created after running Thrift compiler)
+- `calculator.thrift` Paste the following Code:
+   ```
+   namespace py calculator
+   service Calculator {
+    i32 add(1: i32 num1, 2: i32 num2),
+    i32 subtract(1: i32 num1, 2: i32 num2)
+   }
+   ```
+- `server.py` Paste the following Code:
+  ```
+  from __future__ import print_function
+
+   import sys
+   sys.path.append('gen-py')
+
+   from calculator import Calculator
+   from calculator.ttypes import *
+
+   from thrift.transport import TSocket
+   from thrift.transport import TTransport
+   from thrift.protocol import TBinaryProtocol
+   from thrift.server import TServer
+
+   class CalculatorHandler:
+    def add(self, num1, num2):
+        print("Adding {0} and {1}".format(num1, num2))
+        return num1 + num2
+
+    def subtract(self, num1, num2):
+        print("Subtracting {1} from {0}".format(num1, num2))
+        return num1 - num2
+
+   if __name__ == '__main__':
+    handler = CalculatorHandler()
+    processor = Calculator.Processor(handler)
+    transport = TSocket.TServerSocket(port=9090)
+    tfactory = TTransport.TBufferedTransportFactory()
+    pfactory = TBinaryProtocol.TBinaryProtocolFactory()
+
+    server = TServer.TSimpleServer(processor, transport, tfactory, pfactory)
+
+    print("Starting the server...")
+    server.serve()
+    print("Done.")
+
+
+   ```
+- `client.py` Paste the following Code:
+   ```
+   from __future__ import print_function
+
+   import sys
+   sys.path.append('gen-py')
+
+   from calculator import Calculator
+   from calculator.ttypes import *
+
+   from thrift import Thrift
+   from thrift.transport import TSocket
+   from thrift.transport import TTransport
+   from thrift.protocol import TBinaryProtocol
+
+   try:
+    transport = TSocket.TSocket('localhost', 9090)
+    transport = TTransport.TBufferedTransport(transport)
+    protocol = TBinaryProtocol.TBinaryProtocol(transport)
+    client = Calculator.Client(protocol)
+
+    transport.open()
+
+    sum_result = client.add(5, 3)
+    print("5+3={0}".format(sum_result))
+
+    diff_result = client.subtract(10, 4)
+    print("10-4={0}".format(diff_result))
+
+    transport.close()
+
+   except Thrift.TException as tx:
+    print("Thrift Exception: {0}".format(tx.message))
+
+
+   ```
 
 ## Running the Example
 
