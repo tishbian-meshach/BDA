@@ -4,7 +4,7 @@ This guide provides step-by-step instructions for installing Hadoop 3.3.0 on Win
 
 ## Prerequisites
 
-- JDK 8: [Download from Adoptium](https://adoptium.net/temurin/releases/?os=windows&arch=x64&package=jdk&version=8)
+- JDK 8(.msi): [Download from Adoptium](https://adoptium.net/temurin/releases/?os=windows&arch=x64&package=jdk&version=8)
 - Hadoop 3.3.0: [Download from Apache Archive](https://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz)
 
 ## Installation Steps
