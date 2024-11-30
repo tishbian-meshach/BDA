@@ -39,6 +39,7 @@ This project demonstrates a simple calculator service using Apache Thrift with P
 ## Project Structure
 
 - `calculator.thrift` Paste the following Code:
+  
    ```
    namespace py calculator
    service Calculator {
@@ -46,7 +47,9 @@ This project demonstrates a simple calculator service using Apache Thrift with P
     i32 subtract(1: i32 num1, 2: i32 num2)
    }
    ```
+   
 - `server.py` Paste the following Code:
+  
   ```
   from __future__ import print_function
 
@@ -82,10 +85,10 @@ This project demonstrates a simple calculator service using Apache Thrift with P
     print("Starting the server...")
     server.serve()
     print("Done.")
-
-
    ```
+  
 - `client.py` Paste the following Code:
+  
    ```
    from __future__ import print_function
 
@@ -118,8 +121,6 @@ This project demonstrates a simple calculator service using Apache Thrift with P
 
    except Thrift.TException as tx:
     print("Thrift Exception: {0}".format(tx.message))
-
-
    ```
 
 ## Running the Example
