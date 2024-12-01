@@ -9,7 +9,7 @@ This guide provides step-by-step instructions for installing Hadoop 3.3.0 on Win
 
 ## Installation Steps
 
-### Step 1: Unpack the Hadoop Package
+#### Step 1: Unpack the Hadoop Package
 
 1. Create a directory for Hadoop:
    ```
