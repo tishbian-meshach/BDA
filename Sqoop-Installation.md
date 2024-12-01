@@ -74,7 +74,6 @@ grant all privileges on _bigdata.* to 'sqoop'@'localhost';
 grant all privileges on _bigdata.* to 'hive'@'localhost';
 ```
 
-Replace `test_bigdata` with your schema name.
 
 ## Testing the Setup
 
