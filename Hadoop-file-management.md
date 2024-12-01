@@ -6,7 +6,7 @@ This guide provides essential HDFS (Hadoop Distributed File System) commands for
 
 ### Create a Directory
 To create a new directory in HDFS:
-```
+```hadoop
 hdfs dfs -mkdir /user/
 ```
 
