@@ -21,7 +21,7 @@ This guide provides step-by-step instructions for installing Apache Hive on Wind
 
 ## 3. Configure Hive
 
-1. Create a file named `hive-site.xml` in `C:\hive\conf` with the following content:
+1. Create a file named `hive-site.xml` in `C:\hive\conf` with the following content: ( Delete already existing `hive-default-site.xml` template file
 
    ```xml
    <?xml version="1.0"?>
