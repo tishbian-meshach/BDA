@@ -28,6 +28,8 @@ Install the downloaded JDK 8 (jdk8.msi).
 
 ### Step 3: Install Hadoop Native IO Binary
 
+##Git-Download [Download Git](https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.1/Git-2.47.1-64-bit.exe)
+
 1. Clone the repository with pre-built Hadoop Windows native libraries:
    ```
    git clone https://github.com/ruslanmv/How-to-install-Hadoop-on-Windows.git
